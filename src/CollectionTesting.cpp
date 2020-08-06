@@ -74,15 +74,14 @@ void TestgetEnd(){
 }
 
 void TestFind(){
-    Collection one;
-    for(double i = 0; i < 5; i += 1){
-        one.add(i);
-    }
+    Collection one(2);
+    one.add(10);
+    one.add(4);
     checkCase("Find value: ", one.find(7)==-1);
-    checkCase("Find value: ", one.find(4)==5);
+    checkCase("Find value: ", one.find(4)==1);
 }
 void TestExtractionOperator(){
-    Collection one;
+    Collection one(2);
     one.add(1);
     one.add(2);
     stringstream sout;

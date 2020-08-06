@@ -53,7 +53,7 @@ public:
      * @param ndx
      * @return
      */
-    int get (int ndx);
+    double get (int ndx);
 
     /**
      * returns the first value in the array.  Throws and out_of_range exception if the array is empty
@@ -72,7 +72,7 @@ public:
      * @param needle
      * @return
      */
-    int find(double needle);
+    double find(double needle);
 
     /**
      * overload the extraction operator to display the list
